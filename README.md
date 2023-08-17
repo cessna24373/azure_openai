@@ -17,6 +17,7 @@ Classify those company as either Tech ,Energy , Luxury Goods ,Investment.
 container  app or web app service  ¥10/hour　→¥7200/month
 gpt3.5 or 4 in azure openai api         ¥0.3/1000token
 
+```python
 from diagrams import Cluster, Diagram
 from diagrams.aws.compute import ECS
 from diagrams.aws.database import ElastiCache, RDS
@@ -27,7 +28,7 @@ from diagrams.azure.web import Search
 from diagrams.azure.database import CosmosDb
 from diagrams.azure.database import BlobStorage
 
-```python
+
 with Diagram("Enterprise ChatBot", show=False) as diag:
     appService = AppServices("AppService")
     openai = CognitiveServices("OpenAI API")
